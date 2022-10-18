@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+        }
+
+        input{
+            margin-top: 5px;
+            width: 181px;
+            height: 22px;
+        }
+
+        textarea{
+            width: 181px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/b571865a8d9b721aebd8fd2807c02fa9" method="POST">
+        <label for="namesobrenome">Nome e Sobrenome:</label>
+        <input type="text" id="namesobrenome" name="nome" placeholder="Digite seu nome aqui" required>
+
+        <label for="email"> E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="email@dominio.com.br" required>
+
+        <label for="telefone"> Telefone: </label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" required> 
+        
+        <label> Mensagem </label>
+        <textarea cols="30" rows="10" id=""mensagem" name="mensagem"></textarea>
+
+        <input type="submit" value="Enviar.">
+</body>
+</html>

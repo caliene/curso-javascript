@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    
+    
+    
+    <head>
+        
+        <title>Index</title>
+        <meta charset="utf-8" />
+        
+        <!-- Meus estilos -->
+        <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+        
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Font-awesome - icones -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        
+        <!-- fonte do google -->
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|PT+Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+        
+        <!-- bootstrao 0-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        
+        <!-- Materialize -->
+        <link rel="stylesheet" href="css/materialize.css">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
+        <script src="js/formu.js"></script>
+        
+    </head>
+    
+    
+    
+    
+
+    <body>
+        
+        <nav class="black">
+    <div class="nav-wrapper">
+      <a href="index.html"><i class="fas fa-home fa-3x"></i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!-- <li><a data-toggle="modal" data-target="#myModal"><i class="fas fa-user"> Minha conta</i></a></li>
+          <li><a href="carrinho.html" target="_blank"><i class="fas fa-shopping-cart"> Meus Pedidos</i></a></li> -->
+      </ul>
+    </div>
+        </nav>
+
+        <script>
+          var dataHora, xHora, xDia, dia, mes, ano, saudação;
+          dataHora = new Date();
+          xHora = dataHora.getHours();
+  
+          if(xHora >=0 && xHora <12) { saudação = "Bom dia!!!"}
+          if(xHora >=12 && xHora <18) { saudação = "Boa tarde!!!"}
+          if(xHora >=18 && xHora <23) { saudação = "Boa noite!!!"}
+  
+          xDia = dataHora.getDay();
+  
+          diaSem = new Array(7); 
+          diaSem[0] = "Domingo"; 
+          diaSem[1] = "Segunda-Feira";
+          diaSem[2] = "Terça-Feira";
+          diaSem[3] = "Quarta-Feira";
+          diaSem[4] = "Quinta-Feira";
+          diaSem[5] = "Sexta-feira";
+          diaSem[6] = "Sabado";
+  
+          dia = dataHora.getDate();
+          mes = dataHora.getMonth();
+  
+          mesAno = new Array(12);
+          
+          mesAno[0] = "Janeiro";
+          mesAno[1] = "Fevereiro";
+          mesAno[2] = "Março";
+          mesAno[3] = "Abril";
+          mesAno[4] = "Maio";
+          mesAno[5] = "Junho";
+          mesAno[6] = "Julho";
+          mesAno[7] = "Agosto";
+          mesAno[8] = "Setembro";
+          mesAno[9] = "Outubro";
+          mesAno[10] = "Novembro";
+          mesAno[11] = "Dezembro";
+  
+          ano = dataHora.getFullYear();
+  
+           alert(saudação + " " + diaSem[xDia] + " ," + dia + " de " + mesAno[mes] + " de " + ano);
+  
+          </script>
+    
+        
+        
+        
+<!-- <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="Images/slider1.jpg" class="hoverable materialboxed"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="Images/slider2.jpg" class="hoverable materialboxed"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="Images/slider3.jpg" class="hoverable materialboxed">
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="Images/slider4.jpg" class="hoverable materialboxed">
+        <div class="caption left-align">
+        </div>
+      </li>
+    </ul>
+    </div> -->
+
+ <div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="https://sm.ign.com/t/ign_br/screenshot/default/genshin-impact-v14-en_7vay.1080.jpg" class="hoverable materialboxed"> 
+      <div class="caption center-align">
+      </div>
+    </li>
+    <li>
+      <img src="https://sm.ign.com/t/ign_pt/screenshot/default/narukami-island-grand-narukami-shrine_ydkv.1080.jpg" class="hoverable materialboxed"> 
+      <div class="caption center-align">
+      </div>
+    </li>
+    <li>
+      <img src="https://defeatzone.com/wp-content/uploads/2021/04/Vazamentos-da-Regiao-de-Inazuma-de-Genshin-Impact-1600x872.jpeg" class="hoverable materialboxed">
+      <div class="caption center-align">
+      </div>
+    </li>
+    <li>
+      <img src="https://www.gamelivestory.com/images/article/genshin-impact-how-to-unlock-inazuma-reputation-main.webp" class="hoverable materialboxed">
+      <div class="caption left-align">
+      </div>
+    </li>
+  </ul>
+</div>
+        
+        <br/><br/><br/><br/>
+        
+        
+        
+      <!-- <div class="container text-center">
+           <div class="row">
+            <div class="col-md-4 image">
+                <a href="produto.html" target="_blank"><img src="Images/CAMISETA%20CREATURE%20SHREDDED%20GREY.jpg"  class="aligncenter img-fluid  hoverable materialboxed"/></a>
+            </div>
+           
+           
+            <div class="col-md-4 image">
+                <a href="produto.html" target="_blank"><img src="Images/CAMISETA%20DGK%20LEVELS%20BLACK.jpg"  class="aligncenter img-fluid  hoverable materialboxed"/></a>
+            </div>
+           
+           
+           <div class="col-md-4 image">
+                <a href="produto.html" target="_blank"><img src="Images/Camiseta%20Eagle.jpg" class="aligncenter img-fluid  hoverable materialboxed"/></a>
+            </div>   
+               
+            </div>
+        </div> -->
+        
+        
+        
+            <br/>
+            <br/>
+        
+            <!-- <img src="Images/berma.png" width="1250" class="aligncenter img-fluid hoverable materialboxed imgberma"/> -->
+        
+        
+        
+        
+            <br/>
+            <br/>    
+<div class="container center">   
+    <div class="row justify-content-md-left">
+        <div class="col-md-6">
+            <b class="fconosco">Fale Conosco</b><br>
+
+     <br/><br/>
+     <fieldset>
+      <form name="form1" action="https://formsubmit.co/b571865a8d9b721aebd8fd2807c02fa9" method="POST">
+                <label class="labelnegrito">Nome</label>
+                <input name="nome" type="text"/>
+                <br/>
+            
+                <label class="labelnegrito">E-mail</label>
+                <input name="email" type="text"/>
+                <br/>
+             
+                <label class="labelnegrito">Telefone</label>
+                <input name="telefone" type="text"/>
+                <br/>
+             
+                <label class="labelnegrito">Comentário</label>
+                <textarea name="mensagem" placeholder="Mensagem" cols="50" rows="50" maxlength="500"></textarea><br>
+                <br />
+            
+                <button class="btn btn-danger" onclick="return validar()">Enviar</button>      
+              </fieldset>
+            </div>
+        
+           
+         <!--   <div class="col-md-6">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3620776093107!2d-46.59835466403883!3d-23.55233712176325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5934268f4b49%3A0x40797b77e036a886!2sRua+Taquari%2C+546+-+Mooca%2C+S%C3%A3o+Paulo+-+SP%2C+03166-000!5e0!3m2!1spt-BR!2sbr!4v1558846241111!5m2!1spt-BR!2sbr" class="gmaps" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+     </div>
+ </div> -->
+          
+        
+        <br/><br/>          
+        <hr/>
+        
+        
+       
+        
+<!-- <div class="container ">   
+    <div class="row justify-content-md-left">
+        <div class="col-md-4">
+            <b class="fconosco">Menu</b><br><br>
+            <u><a href="produto.html" target="_blank" class="itensmenu" >Produtos</a></u><br>
+            
+        </div> -->
+    
+        <!-- <div class="col-md-4">
+            <b class="fconosco">Sobre Nós</b><br>
+            <i class="fas fa-phone"><u class="itensmenu"> Telefone:</u></i> <b>(11) 9999-9999</b><br>
+            <i class="fas fa-map-marker-alt"><u class="itensmenu"> Endereço:</u></i> <b>Rua Taquari, 546 - Mooca, São Paulo</b><br>
+            <i class="fas fa-envelope"><u class="itensmenu"> Email:</u></i> <b>matheus23zf@gmail.com</b>
+        </div> -->
+        
+    
+       <!-- <div class="col-md-4">
+            <a href="https://www.facebook.com/usjtoficial/" target=”_blank”><img src="Images/face.png" class=" img-fluid hoverable" width="55"/></a><b class="labelnegrito"> Facebook</b><br><br>
+            <a href="https://www.instagram.com/usjtoficial/" target="_blank"><img src="Images/insta.jpg" class=" img-fluid hoverable  " width="55"/></a><b class="labelnegrito"> Instagram</b>
+        </div> 
+    </div>
+</div> -->
+        
+        
+        
+        
+        
+        <!-- Inicio Modal -->
+        <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+              </div>
+
+              <div class="modal-body">
+                <p>E-mail</p>
+                <input type="text" id="mailID"/>
+                
+                <p>Senha</p>
+                <input type="text" id="senhaID"/>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="logar()" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+        <!-- Fim Modal -->
+        
+        
+        
+        <!-- js -->
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+
+        <script>
+            $(document).ready(function(){
+                $('.slider').slider({
+        interval: 6000,
+        height: 450
+     }); 
+    });  
+        </script>
+        
+        
+        
+        
+    <script>
+            $(document).ready(function() {
+            $('.modal').on('hidden.bs.modal', function() {
+            console.log('fechar modal')
+            $(this).find('input:text').val('');
+        });
+    });     
+  
+    </body>
+    
+    
+</html>

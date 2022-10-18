@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro slide.</title>
+
+    <style>
+        #id {width: 100%; height: 700px;}
+    </style>
+
+    <!--função para execução do slide-->
+    <script>
+        function slide1() {
+            document.getElementById("id").src="https://www.pcgamesn.com/wp-content/uploads/2022/09/genshin-impact-next-banner-schedule-event-wishes-cyno.jpg";
+            setTimeout("slide2()", 3000)
+            document.getElementById("aID").href="";
+
+        }
+
+        function slide2() {
+            document.getElementById("id").src="https://assets2.rockpapershotgun.com/genshin-impact-3-1-livestream-phase-i.png/BROK/resize/1920x1920%3E/format/jpg/quality/80/genshin-impact-3-1-livestream-phase-i.png";
+            setTimeout("slide3()", 3000)
+            document.getElementById("aID").href="";
+
+        }
+
+        function slide3() {
+            document.getElementById("id").src="https://cdn.fanbyte.com/wp-content/uploads/2020/10/Genshin-3.0-Phase-2-Banners-1024x576.png?x48911";
+            setTimeout("slide1()", 3000)
+            document.getElementById("aID").href="";
+
+        }
+
+    </script>
+</head>
+<body onload="slide1()">
+    <!--código de exibição do slide-->
+    <a id="aID"><img id="id"></a>
+    
+</body>
+</html>

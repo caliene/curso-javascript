@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dataHora, xHora, xDia, dia, mes, ano, saudação;
+        dataHora = new Date();
+        xHora = dataHora.getHours();
+
+        if(xHora >=0 && xHora <12) { saudação = "Bom dia!!!"}
+        if(xHora >=12 && xHora <18) { saudação = "Boa tarde!!!"}
+        if(xHora >=18 && xHora <23) { saudação = "Boa noite!!!"}
+
+        xDia = dataHora.getDay();
+
+        diaSem = new Array(7); 
+        diaSem[0] = "Domingo"; 
+        diaSem[1] = "Segunda-Feira";
+        diaSem[2] = "Terça-Feira";
+        diaSem[3] = "Quarta-Feira";
+        diaSem[4] = "Quinta-Feira";
+        diaSem[5] = "Sexta-feira";
+        diaSem[6] = "Sabado";
+
+        dia = dataHora.getDate();
+        mes = dataHora.getMonth();
+
+        mesAno = new Array(12);
+        
+        mesAno[0] = "Janeiro";
+        mesAno[1] = "Fevereiro";
+        mesAno[2] = "Março";
+        mesAno[3] = "Abril";
+        mesAno[4] = "Maio";
+        mesAno[5] = "Junho";
+        mesAno[6] = "Julho";
+        mesAno[7] = "Agosto";
+        mesAno[8] = "Setembro";
+        mesAno[9] = "Outubro";
+        mesAno[10] = "Novembro";
+        mesAno[11] = "Dezembro";
+
+        ano = dataHora.getFullYear();
+
+        
+
+
+        document.write(saudação + " " + diaSem[xDia] + " ," + dia + " de " + mesAno[mes] + " de " + ano);
+
+        </script>
+</body>
+</html>
